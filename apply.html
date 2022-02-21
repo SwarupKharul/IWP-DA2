@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="common.css" />
+		<title>Job Portal</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="nav">
+				<div style="padding-right: 700px">
+					<a href=""><strong>Job Portal</strong></a>
+				</div>
+				<div>|</div>
+				<div><a href="index.html"> Home</a></div>
+				<div>|</div>
+				<div><a href="apply.html"> Apply Jobs</a></div>
+				<div>|</div>
+				<div><a href="view.html">View Jobs</a></div>
+			</div>
+			<!-- Form to apply for job -->
+            <div style="padding: 5%">
+                <h3>Apply for Job</h3
+                <form action="apply">   
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <table>
+                            <tr>
+                                <td>First Name :</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                            <tr>
+                                <td>Last Name :</td>
+                                <td><input type="text" /></td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <br />
+                    <fieldset>
+                        <legend>Academic Details</legend>
+                        <table>
+                            <tr>
+                                <label for="degree">What do u know?</label>
+                                <br />
+                                <input type="radio" value="Btech" />
+                                <label for="web">Web Design</label
+                                ><br />
+                                <input type="radio" value="sql" />
+                                <label for="sql">SQL</label
+                                ><br />
+                                <input type="radio" value="programming" />
+                                <label for="programming">Programming</label>
+                                <br />
+                                <label for="career">Career Goal :</label>
+                                <br />
+                                <select name="career">
+                                    <option value="programmer">Programmer</option>
+                                    <option value="writer">Content Writer</option>
+                                    <option value="product">Product Manager</option>
+                                </select>
+                                <br />
+                                <label for="skills">Skills(check all that apply)</label>
+                                <br />
+                                <div style="display: flex">
+                                    <input type="checkbox" />
+                                    <label for="html">HTML</label><br />
+                                    <input type="checkbox" value="css" />
+                                    <label for="css">CSS</label><br />
+                                </div>
+                                <div style="display: flex">
+                                    <input type="checkbox" value="unix" />
+                                    <label for="unix">UNIX</label><br />
+                                    <input type="checkbox" value="VIM" />
+                                    <label for="VIM">VIM</label><br />
+                                </div>
+                                <div style="display: flex">
+                                    <input type="checkbox" value="python" />
+                                    <label for="python">Python</label><br />
+                                    <input type="checkbox" value="javascript" />
+                                    <label for="javascript">Javascript</label>
+                                </div>
+                                <br />
+                                <label for="add">Describe any additional skills you have: </label>
+                                <br />
+                                <textarea name="" id="" cols="40" rows="2"></textarea>
+                            </tr>
+                        </table>
+                    </fieldset>
+                    <!-- Submit button -->
+                    <input type="submit" value="Submit" />
+                </form>
+		</div>
+		<div class="footer">
+			<p>Copyright &copy; 2013 enthosweb</p>
+		</div>
+	</body>
+</html>
