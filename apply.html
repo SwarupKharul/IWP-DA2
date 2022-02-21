@@ -21,25 +21,32 @@
 				<div><a href="view.html">View Jobs</a></div>
 			</div>
 			<!-- Form to apply for job -->
-            <div style="padding: 5%">
-                <h3>Apply for Job</h3
+            <div style="padding: 2px;">
+                <h3>Apply for Job</h3>
+                <style>
+                form {
+                    background-color: rgb(135, 239, 253);
+                }
+                </style>
                 <form action="apply">   
                     <fieldset>
                         <legend>Personal Info</legend>
-                        <table>
-                            <tr>
-                                <td>First Name :</td>
-                                <td><input type="text" /></td>
-                            </tr>
-                            <tr>
-                                <td>Last Name :</td>
-                                <td><input type="text" /></td>
-                            </tr>
-                        </table>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                          <option value="australia">Australia</option>
+                          <option value="canada">Canada</option>
+                          <option value="usa">USA</option>
+                        </select>
                     </fieldset>
                     <br />
                     <fieldset>
-                        <legend>Academic Details</legend>
+                        <legend>Job Details</legend>
                         <table>
                             <tr>
                                 <label for="degree">What do u know?</label>
@@ -53,7 +60,8 @@
                                 <input type="radio" value="programming" />
                                 <label for="programming">Programming</label>
                                 <br />
-                                <label for="career">Career Goal :</label>
+                                <br>
+                                <label for="career">Job Goal :</label>
                                 <br />
                                 <select name="career">
                                     <option value="programmer">Programmer</option>
@@ -61,7 +69,8 @@
                                     <option value="product">Product Manager</option>
                                 </select>
                                 <br />
-                                <label for="skills">Skills(check all that apply)</label>
+                                <br>
+                                <label for="skills">Your Skillset(check all that apply)</label>
                                 <br />
                                 <div style="display: flex">
                                     <input type="checkbox" />
